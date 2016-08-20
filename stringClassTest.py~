@@ -19,7 +19,7 @@ class TestBuildInStringClass(unittest.TestCase):
         with self.assertRaises(TypeError):
             "emmanuel muthui".split(2)
     def test_join(self):
-        self.assertEqual(" ".join(['emmanuel', 'muthui']),'emmanuel muthui')
+        self.assertEqual(" ".join(['emmanuel', 'muthui'],'emmanuel muthui'))
     def test_index(self):
         self.assertEqual("emmanuel".index('m'),1)
         with self.assertRaises(ValueError):
@@ -29,8 +29,4 @@ class TestBuildInStringClass(unittest.TestCase):
         
     def test_replace(self):
         self.assertEqual("emmanuel".replace('m','k'),'ekkanuel')
-        self.assertEqual("emmanuel".replace('q','k'),'emmanuel')
-        
-if __name__=="__main__":
-    unittest.main()
-    
+        self.assertEqual("emmanuel".replace('m','k'),'emmanuel')
