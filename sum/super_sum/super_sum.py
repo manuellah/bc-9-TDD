@@ -17,3 +17,6 @@ def super_sum(*args):
                     
     return aggr_sum
        
+print(super_sum(2,3,4))
+print(super_sum(5,[3,4]))
+print(super_sum(4,5,2))
